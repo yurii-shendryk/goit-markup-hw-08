@@ -1,15 +1,29 @@
 .filters {
-// для десктопа
+    display: flex;
+    margin-bottom: 40px;  
+        @media screen and (max-width: 767px){    
+            flex-wrap: wrap;
+            flex-basis: calc((100% - 2 * 8px)/3);
+        }
+
     // justify-content: center;
     // align-items: flex-start;
-    // margin-bottom: 50px;  
+    
     // padding-bottom: 16px;  
 
     &__item{
-    // для десктопа
-        //     &:not(:last-child){
-    //         margin-right: 8px;
-    //   }
+    margin-right: 8px;
+    margin-bottom: 15px;
+        @media screen and (max-width: 767px){
+            &:nth-child(3n) {
+                margin-right: 0px;
+            }
+
+        &:nth-last-child(-n + 2){
+            margin-bottom: 0px;
+        }
+        }
+            
     }
 
     &__button {

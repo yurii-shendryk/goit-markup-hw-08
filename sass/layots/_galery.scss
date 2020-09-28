@@ -8,11 +8,15 @@
     // стилі десктопа
     // flex-basis: calc((100% - 30px * 2) / 3);
       // margin-right: 30px;
-      // margin-bottom: 30px;
-      // font-size: 0;
+    margin-bottom: 30px;
+    font-size: 0;
+    @media screen and (max-width: 767px) {
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
     
-    
-      // border: 1px solid $border-color;
+      border: 1px solid $border-color;
   
       // &:nth-child(3n){
       //   margin-right: 0;
