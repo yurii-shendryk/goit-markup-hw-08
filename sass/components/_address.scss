@@ -2,6 +2,10 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.5;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   
   &__link {
     display: block;

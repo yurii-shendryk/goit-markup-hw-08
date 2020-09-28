@@ -1,5 +1,8 @@
 .join {
-    margin-right: 93px;
+    // margin-right: 93px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
     }
     
 %placeholder-text {

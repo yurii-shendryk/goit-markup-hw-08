@@ -1,25 +1,46 @@
     .section {
-  padding-bottom: 94px;
+   padding-bottom: 60px;
+
+
+  // стилі десктопа
+  // padding-bottom: 94px;
     
     
     &--start {
-      padding-top: 94px;
+      padding-top: 60px;
+      
+      // стилі десктопа
+      // padding-top: 94px;
     }
     
     &--grey {
       background-color: $team-buttons-bg-color;
     }
     
+    &--none {
+      display: none;
+    }
+    
     &__title {
       margin-top: 0;
-      margin-bottom: 50px;  
+      margin-bottom: 30px;  
       margin-left: auto;
       margin-right: auto;
-      font-size: 36px;
+      font-size: 28px;
       color: $titles-color;
       text-align: center;
-      line-height: 1.17;
-      letter-spacing: 0.03em;
+      line-height: 1.179;
+
+
+      // стилі десктопа
+      
+      // margin-bottom: 50px;  
+      
+      // font-size: 36px;
+      
+  
+      // line-height: 1.17;
+
     }
   
   }

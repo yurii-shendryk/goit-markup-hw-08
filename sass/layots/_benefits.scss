@@ -1,6 +1,5 @@
 .benefits {
-    flex-wrap: wrap;
- 
+     
     &__title {
       margin-top: 0;
       margin-bottom: 10px;
@@ -9,25 +8,37 @@
       line-height: 1.15;
       color: $titles-color;
       text-transform: uppercase;
-      
+
+      @media screen and (max-width: 767px){
+        text-align: center;
+      }
     }
     
-    &__description {
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.79;
+    &__description {  
+       font-size: 14px;
+       line-height: 1.71;
       color: $description-header-link-color;
     }
 
   }  
 
   .benefits__item {
-    flex-basis: calc((100% - 30px * 3) / 4);
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+    margin-bottom: 30px;  
+      
+    }
+
+
+    // стилі десктопа
+    // flex-basis: calc((100% - 30px * 3) / 4);
+    // margin-right: 30px;
   
   
   &:nth-child(4n) {
-    margin-right: 0;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;  
+    }
+  //   margin-right: 0;
   }
   
   &::before {
