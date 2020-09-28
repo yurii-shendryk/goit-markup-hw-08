@@ -1,11 +1,11 @@
 .button-close {
     // для десктопа
-    // position: absolute;
+    position: absolute;
     top: 8px;
     right: 8px;
-    // для десктопа
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+      align-items: center;
     width: 30px;
     height: 30px;  
     outline: none;

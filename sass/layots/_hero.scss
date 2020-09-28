@@ -1,5 +1,5 @@
 .hero {
-    min-width: 480px;
+    max-width: 767px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;  
@@ -22,11 +22,12 @@
   // background-position: center;
 
     &__title {
-
+      
        margin-top: 0;
        margin-right: auto;
        margin-bottom: 30px;
        margin-left: auto;
+       
        max-width: 360px;
     
       font-size: 26px;

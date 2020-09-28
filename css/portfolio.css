@@ -709,8 +709,10 @@ summary {
   background-color: #f5f4fa;
 }
 
-.section--none {
-  display: none;
+@media screen and (max-width: 767px) {
+  .section--none {
+    display: none;
+  }
 }
 
 .section__title {
