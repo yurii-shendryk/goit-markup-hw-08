@@ -1,0 +1,34 @@
+.subscribe-form {
+    &__input {
+    width: 358px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 12px;
+    
+    color: $main-color;
+  
+    background-color: $footer-bg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 200px;  
+    }
+
+  }
+  
+  
+  
+  
+  

@@ -1,0 +1,103 @@
+.form-field {
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &__input {
+    width: 100%;
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 42px;
+    border: 1px solid $modal-input-border-color;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  &__label {
+    font-size: 12px;
+    line-height: 1.167;
+    margin-bottom: 4px;
+    color: $description-header-link-color;  
+    letter-spacing: 0.01em;
+  }
+
+  &__input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    width: 18px;
+    height: 18px;
+    fill: $titles-color;
+  }
+
+  &__textarea {
+    resize: none;
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 1px solid $modal-input-border-color;
+    border-radius: 4px;
+    outline: none;
+
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.167  ;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+      border-color: $accent-color;
+    }
+
+  }
+
+}
+
+  
+  
+  
+  
+.form-field__input {
+    
+    &:focus {
+      border-color: $accent-color;
+
+      & ~ .form-field__input-icon {
+        fill: $accent-color;
+      }
+
+      &:not(:placeholder-shown):valid {
+        border: 1px solid green;
+      } 
+      
+      &:not(:placeholder-shown):invalid {
+        border: 1px solid red;
+      }    
+
+    }
+
+  }
+  
+
+  .form-field__input{
+      &:focus:not(:placeholder-shown):valid ~ .form-field__input-icon {
+        fill: green;    
+      }
+  }
+  
+  .form-field__input{
+      &:not(:placeholder-shown):invalid ~ .form-field__input-icon {
+        fill: red;
+      }
+  }
+  
+  
+  
+  
+  
+  
+ 

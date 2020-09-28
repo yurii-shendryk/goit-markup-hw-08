@@ -1,0 +1,50 @@
+.occupation {
+  flex-wrap: wrap;
+  font-size: 0;
+  
+  
+    &__item {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+      margin-right: 30px;
+    
+    }
+    
+    &__item {
+        &:nth-child(3n) {
+        margin-right: 0px;
+        }
+    }
+    
+    &__thumb {
+      position: relative;
+    }
+
+    
+    
+    
+    &__label{
+      position: absolute;
+      margin: 0;
+      width: 100%;
+      height: 70px;
+      bottom: 0;
+    
+      background: rgba(47, 48, 58, 0.8);
+    }
+    
+    &__title {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      line-height: 1.143;
+      text-align: center;
+      text-transform: uppercase;
+      color: $main-color;
+    }
+
+}

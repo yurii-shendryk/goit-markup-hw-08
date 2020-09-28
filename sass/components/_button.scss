@@ -1,0 +1,25 @@
+.button {
+    display: block;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $main-color;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    
+    background-color: $accent-color;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: $main-color;
+
+      &--end {
+      margin-left: 10px;
+      }
+  }
+
+}

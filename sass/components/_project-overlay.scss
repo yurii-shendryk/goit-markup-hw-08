@@ -1,0 +1,24 @@
+.project-overlay {
+    position: absolute;
+    background-color: $accent-color;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;    
+    transform: translatey(100%);
+    transition: transform 250ms $timing; 
+  
+    .project:hover &,
+    .project:focus & {
+     transform: translatey(0);
+    }
+  
+    &__text {  
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.56;
+      color: $main-color;
+      }
+  }

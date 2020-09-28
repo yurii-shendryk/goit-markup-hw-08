@@ -1,0 +1,60 @@
+.benefits {
+    flex-wrap: wrap;
+ 
+    &__title {
+      margin-top: 0;
+      margin-bottom: 10px;
+    
+      font-size: 14px;
+      line-height: 1.15;
+      color: $titles-color;
+      text-transform: uppercase;
+      
+    }
+    
+    &__description {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.79;
+      color: $description-header-link-color;
+    }
+
+  }  
+
+  .benefits__item {
+    flex-basis: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+  
+  
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $team-buttons-bg-color;
+    background-position: center;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+  }
+  
+  &:nth-child(1)::before {
+    background-image: url('../img/antenna.svg');
+  }
+  
+  &:nth-child(2)::before {
+    background-image: url('../img/clock.svg');
+  }
+  
+  &:nth-child(3)::before {
+    background-image: url('../img/diagram.svg');
+  }
+  
+  &:nth-child(4)::before {
+    background-image: url('../img/astronaut.svg');
+  }
+} 
+ 

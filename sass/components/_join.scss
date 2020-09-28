@@ -1,0 +1,24 @@
+.join {
+    margin-right: 93px;
+    }
+    
+%placeholder-text {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.143;
+    text-transform: uppercase;
+    color: $main-color;
+}
+
+
+    
+    .join__text {
+        @extend %placeholder-text;
+    } 
+    .subscribe__text {
+        @extend %placeholder-text;
+    }

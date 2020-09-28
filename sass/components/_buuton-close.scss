@@ -1,0 +1,36 @@
+.button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;  
+    outline: none;
+    border-radius: 50%;
+    border-color: $main-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $main-color;
+    transition: fill 250ms linear;
+
+    &__icon {
+      fill: $logo-text-color;
+      width: 18px;
+      height: 18px;
+      transition: fill 300ms linear;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .button-close__icon{
+        fill: $accent-color;
+      }
+    }
+  }
+  
+  
+  
+
+  
+ 

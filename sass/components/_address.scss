@@ -1,0 +1,17 @@
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  
+  &__link {
+    display: block;
+    margin-top: 9px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $main-color;
+    opacity: 0.6;
+  }
+  
+}
+  
+  

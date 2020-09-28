@@ -1,0 +1,74 @@
+.clients {
+  flex-wrap: wrap;
+  font-size: 0;
+
+  &__icon {
+    fill: $fill-icon-color;
+    transition: fill 250ms $timing;
+  }
+  
+  &__yago {
+    width: 44.27px;
+    height: 49.23px;
+  }
+  
+  &__tagline {
+    width: 40px;
+    height: 52px;
+  }
+  
+  &__company {
+    width: 41px;
+    height: 42.6px;
+  }
+  
+  &__fosterpeters {
+    width: 79.66px;
+    height: 42.02px;
+  }
+  
+  &__brand {
+    width: 59px;
+    height: 47px;
+  }
+  
+  &__Comptagline {
+    width: 88.48px;
+    height: 45.44px;
+  }
+}
+
+.clients__item {
+ width: calc((100% - 5 * 30px) / 6);
+ height: 90px;
+ border: 1px solid $fill-icon-color;
+ border-radius: 4px;
+
+  &:not(:nth-child(6n)){
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $fill-icon-color;
+  transition: border 250ms $timing;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+    
+    &:hover , 
+    &:focus  {
+        
+        .clients__icon{
+          fill: $accent-color;
+        }
+    }
+}
+

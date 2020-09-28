@@ -1,0 +1,17 @@
+.footer {
+    padding: 60px 0px;
+  
+    color: $main-color;
+    background-color: $footer-bg-color;
+    
+    &__container {
+        align-items: flex-start;
+        justify-content: center;
+    }
+       
+    &__contacts {
+         margin-right: 70px;
+         width: 231px;
+    }
+}
+
