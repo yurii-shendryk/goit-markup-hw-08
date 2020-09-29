@@ -1,27 +1,32 @@
 .nav-contacts {
-    margin-left: auto;
+    // margin-left: auto;
 
     @media screen and (max-width: 767px){
       display: none;
     }
-    // для десктопа
-    // &__item {
+
+    
+    &__item {       
     //   &:not(:last-child) {
     //     margin-right: 50px;
-    //   }
     // }
+    @media screen and (max-width:1199px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    }
 
     &__link {
       
-      // для десктопа
-      // align-items: center;
-      font-size: 14px;
+      align-items: center;
+      font-size: 12px;
       font-weight: 500;
       text-decoration: none;
       fill: $description-header-link-color;
       color: $description-header-link-color;
       letter-spacing: 0.02em;
-      line-height: 1.1429;
+      line-height: 1.167;
       transition: color 250ms $timing, fill 250ms $timing;
 
       &:hover,
@@ -32,21 +37,19 @@
     }
     
       &__icon {
-      // для десктопа
-        // margin-right: 10px;
+      
+      margin-right: 8px;
       }
       
       
       &__envelope {
-        // для десктопа
-        // width: 16px;
-        // height: 12px;
+        width: 14px;
+        height: 10px;
       }
       
       &__smartphone {
-        // для десктопа
-        // width: 10px;
-        // height: 16px;
+        width: 10px;
+        height: 14px;
       }
   }
   

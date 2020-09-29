@@ -1,11 +1,18 @@
 .subscribe-form {
-    &__input {
+  
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 450px;
+    margin: 0 166px 0 152px;
+  }
+  
+  &__input {
     width: 100%;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
       }
     // для десктопа
@@ -17,7 +24,6 @@
     background-color: $footer-bg-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    }
 
     &::placeholder {
       font-size: 16px;
@@ -25,18 +31,21 @@
       color: rgba(255, 255, 255, 0.6);
     }
 
+  }
+
+
+
     &__button {
      display: flex;
      align-items: center;
      justify-content: center;
-     min-width: 200px;  
      padding: 10px 28px 10px 29px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       margin: 0 auto;
     }
     }
 
-  }
+}
   
   
   

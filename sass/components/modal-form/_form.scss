@@ -1,9 +1,7 @@
 .form {
-  
-    width: 370px;
+    width: 370px;    
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
       // для десктопа
   // width: 448px;
 
@@ -13,6 +11,7 @@
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.03em;
+        text-align: center;
         color: $description-header-link-color;
         
         // для десктопа
@@ -35,7 +34,6 @@
       }
     
       &__button {
-        min-width: 200px;
         margin-left: auto;
         margin-right: auto;
         padding: 10px 55px 10px 56px;

@@ -17,7 +17,7 @@
                         <nav class="nav">
                                 <ul class=" nav-menu list flexbox">
                                        <li class="nav-menu__item">
-                                                <a  href="index.html" class="nav-menu__link nav-menu__studio">Студия</a>
+                                                <a  href="index.html" class="nav-menu__link nav-menu__link--active">Студия</a>
                                         </li>
                                         <li class="nav-menu__item">
                                                 <a  href="portfolio.html" class="nav-menu__link">Портфолио</a>
@@ -28,7 +28,7 @@
                                 </ul>
                         </nav>
         
-                        <ul class="nav-contacts list flexbox">
+                        <ul class="nav-contacts list">
                                 <li class="nav-contacts__item">
                                         <a  href="mailto:info@devstudio.com" class="nav-contacts__link flexbox">
                                                 <svg class="nav-contacts__icon nav-contacts__envelope">
@@ -321,7 +321,7 @@
     </main>
         <!--футер-->
         <footer class="footer">
-                <div class="container footer__container flexbox">
+                <div class="container footer__container">
                    <div class="footer__contacts">
                         <a href="./index.html" class="logo footer__logo  logo--white">
                                 <span class="logo__label">Web</span>Studio
@@ -382,14 +382,14 @@
 
        <div class="backdrop is-hidden" data-modal>
                <div class="modal">
-                       <button class="button-close flexbox" data-modal-close>
+                       <button class="button-close" data-modal-close>
                                 <svg class="button-close__icon">
                                         <use href="./img/symbol-defs.svg#close-btn"></use>
                                 </svg>                
                        </button>
                        <b class="modal__text">Оставте свои данные, мы вам перезвоним</b>
                        <form action="" class="form" id="contact-form">
-                                <div class="form-field flexbox">
+                                <div class="form-field">
                                         <label for="name" class="form-field__label">Имя</label>
                                         <div class="input-wrap">
                                                 <input type="text" name="name" id="name" class="form-field__input" placeholder=" " pattern="^[a-zA-ZА-Яа-яЁёї'іє\s]+$" autocomplete="off"  required>
@@ -398,7 +398,7 @@
                                                 </svg>
                                         </div>
                                 </div>
-                                <div class="form-field flexbox">
+                                <div class="form-field">
                                         <label for="telephone" class="form-field__label">Телефон</label>
                                         <div class="input-wrap">
                                                 <input type="tel" name="telephone" id="telephone" class="form-field__input" placeholder=" " pattern="[0-9]{10,12}" autocomplete="off" required>
@@ -407,7 +407,7 @@
                                                 </svg>
                                         </div>
                                 </div>
-                                <div class="form-field flexbox">
+                                <div class="form-field">
                                         <label for="mail" class="form-field__label">Почта</label>
                                         <div class="input-wrap">
                                                 <input type="email" name="mail" id="mail" class="form-field__input" placeholder=" " autocomplete="off" required>
@@ -416,7 +416,7 @@
                                                 </svg>
                                         </div>
                                 </div>
-                                <div class="form-field flexbox">
+                                <div class="form-field form-field--end">
                                         <label for="comment" class="form-field__label">Комментарий</label>
                                         <textarea name="comment" id="comment" rows="6" placeholder="Введите коментарий" class="form-field__textarea"></textarea>
                                 </div>

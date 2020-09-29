@@ -6,8 +6,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    padding: 63px 24px;    
+    padding: 77px 24px;    
+
+    
+      @media screen and (max-width: 767px) {
+        height: 100%;  
+      }
+    
+    
     transform: translatey(100%);
     transition: transform 250ms $timing; 
   
@@ -21,5 +27,6 @@
       font-size: 18px;
       line-height: 1.56;
       color: $main-color;
+      letter-spacing: 0.03em;
       }
   }

@@ -5,10 +5,12 @@
   border-bottom: 1px solid $header-border-color;
 
     &__container {
-      // стилі десктопа
-      // display: flex;
-      // align-items: center;
-      // justify-content: space-between;
+      @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;  
+      }
+
     }
     
   }

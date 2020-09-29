@@ -1,6 +1,6 @@
 .hero {
-    max-width: 767px;
-    height: 400px;
+    max-width: 768px;
+    min-height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;  
    background-color: $hero-bg-color; 
@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
      background-position: center;
 
+     @media screen and (min-width:768px) {
+      max-width: 1200px;
+      height: 400px;
+    }
 
   // стилі десктопа
   // max-width: 1600px;
@@ -56,7 +60,6 @@
     }
 
     &__button {
-      min-width: 200px;
       margin-left: auto;
       margin-right: auto;
       padding: 10px 32px;

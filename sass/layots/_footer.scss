@@ -1,21 +1,26 @@
 .footer {
-    padding: 60px 0px;  
+    padding: 60px 0;  
     color: $main-color;
     background-color: $footer-bg-color;
-    
     
 
     // стилі десктопа
     &__container {
-    text-align: center;
-    //     align-items: flex-start;
-    //     justify-content: center;
-    // }
-       
-    // застосувати на десктопі
-    // &__contacts {
-    //      margin-right: 70px;
-    //      width: 231px;
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+            
+        //     align-items: flex-start;
+        //     justify-content: center;
+        }
+    }   
+    
+    &__contacts {
+        @media screen and (min-width: 767px) {
+            display: inline-block;
+            margin-right: 165px;
+            width: 232px;
+            text-align: center;
+        }
     }
 }
     
