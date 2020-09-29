@@ -1,21 +1,30 @@
 .nav-contacts {
-    // margin-left: auto;
+    margin-left: auto;
 
     @media screen and (max-width: 767px){
       display: none;
     }
 
-    
+    @media screen and (min-width: 1200px){
+      display: flex;
+      margin-left: auto;
+    }
+
     &__item {       
-    //   &:not(:last-child) {
-    //     margin-right: 50px;
-    // }
-    @media screen and (max-width:1199px) {
       &:not(:last-child) {
-        margin-bottom: 10px;
+        @media screen and (max-width: 1199px) {
+          margin-bottom: 10px;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            margin-right: 50px;
+        }
+        
       }
+      
+
     }
-    }
+    
 
     &__link {
       
@@ -28,6 +37,12 @@
       letter-spacing: 0.02em;
       line-height: 1.167;
       transition: color 250ms $timing, fill 250ms $timing;
+
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        font-size: 14px;
+        line-height: 1.1429;
+      }
 
       &:hover,
       &:focus {

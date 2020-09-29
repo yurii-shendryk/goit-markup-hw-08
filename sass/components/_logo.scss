@@ -6,15 +6,8 @@
     line-height: 1.167;
     letter-spacing: 0.03em;
     text-decoration: none;  
-    // для десктопа
-    // padding-top: 15px;
-    // padding-bottom: 15px;
+    
     @media screen and (max-width: 767px)
-    {
-      display: inline-block;
-    }
-
-    @media screen and (min-width: 768px)
     {
       display: inline-block;
     }
@@ -44,13 +37,20 @@
   .header__logo {
     padding-top: 16px;
     padding-bottom: 16px; 
+
     @media screen and (min-width: 768px) {
     margin-right: 88px;  
     padding-top: 26px;
     padding-bottom: 26px; 
     }
-    // для десктопа
-    // margin-right: 94px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 94px;
+      padding-top: 24px;
+      padding-bottom: 25px; 
+      }
+
+    
   }
   
   .footer__logo { 

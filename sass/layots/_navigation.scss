@@ -1,9 +1,13 @@
 .nav {
-  // сьтлі десктопа
-  // align-items: center;
+  
+   align-items: center;
 
   @media screen and (max-width: 767px){
     display: none;
+  }
+
+  @media screen and (min-width: 1200px){
+    align-items: center;
   }
   }
     

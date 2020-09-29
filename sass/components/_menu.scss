@@ -1,14 +1,16 @@
 .nav-menu {
-    margin-right: 84px;
     @media screen and (min-width: 768px) {
       justify-content: space-between;  
+    }
+
+    @media screen and (max-width: 1199px) {
+      margin-right: 84px;
     }
   
 
   
 
     &__item {
-
       position: relative;
         &:not(:last-child) {
           margin-right: 50px;
