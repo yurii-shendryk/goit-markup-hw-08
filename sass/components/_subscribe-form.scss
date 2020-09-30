@@ -12,6 +12,12 @@
     padding-top: 15px;
     padding-bottom: 15px;
     
+    color: $main-color;
+  
+    background-color: $footer-bg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
     @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
     }
@@ -24,11 +30,7 @@
     
 
     
-    color: $main-color;
-  
-    background-color: $footer-bg-color;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
+   
 
     &::placeholder {
       font-size: 16px;

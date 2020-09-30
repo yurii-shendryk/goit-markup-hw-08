@@ -541,9 +541,22 @@ summary {
   height: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .nav-contacts__envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+
 .nav-contacts__smartphone {
   width: 10px;
   height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-contacts__smartphone {
+    height: 16px;
+  }
 }
 
 .button {
@@ -722,7 +735,7 @@ summary {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   max-width: 450px;
@@ -745,6 +758,12 @@ summary {
   padding: 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .backdrop .modal {
+    padding: 40px 39px 40px 41px;
+  }
+}
+
 .is-hidden .modal {
   top: -100%;
   opacity: 0;
@@ -752,8 +771,6 @@ summary {
 }
 
 .modal__text {
-  margin: 0;
-  padding: 0;
   display: block;
   text-align: center;
   margin-bottom: 12px;
@@ -762,6 +779,12 @@ summary {
   line-height: 1.5;
   color: #212121;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__text {
+    line-height: 1.15;
+  }
 }
 
 .backdrop {
@@ -810,6 +833,7 @@ summary {
   width: 370px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -831,7 +855,6 @@ summary {
 @media screen and (min-width: 1200px) {
   .form__checkbox-label {
     width: calc(100% - 11.5px*2);
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;

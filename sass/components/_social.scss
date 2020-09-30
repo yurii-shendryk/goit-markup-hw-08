@@ -7,11 +7,7 @@
       &:not(:last-child) {
         margin-right: 10px;
       }
-      
-      // для десктопа
-      // &:not(:last-child) {
-      //   margin-right: 10px;
-      // }
+   
     }
 
       &__icon { 
@@ -37,11 +33,6 @@
       align-items: center;
       width: 44px;
       height: 44px;
-
-      // для десктопа
-      // justify-content: center;
-      // align-items: center;
-  
     
       background-color: $main-color;
       border-radius: 50%;
