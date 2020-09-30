@@ -56,10 +56,12 @@
   .footer__logo { 
     margin-right: 0;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
-    // для десктопа
-    // margin-right: 0;
-    // margin-bottom: 20px;
-// }
+    
+
   
   

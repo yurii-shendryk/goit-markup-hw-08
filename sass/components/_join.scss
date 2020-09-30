@@ -1,22 +1,24 @@
 .join {
-    // margin-right: 93px;
+    
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
     }
     @media screen and (min-width: 768px) {
         display: inline-block;
         vertical-align: top;
-        text-align: center; 
-        
         
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
     }
+}
     
 %placeholder-text {
     display: block;
     margin-top: 0;
     margin-bottom: 20px;
-    text-align: center;
+
     font-size: 14px;
     font-weight: 700;
     line-height: 1.143;
