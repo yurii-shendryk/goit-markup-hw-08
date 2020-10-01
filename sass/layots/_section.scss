@@ -1,50 +1,49 @@
     .section {
-   padding-bottom: 60px;
+padding-bottom: 60px;
 
-
-  // стилі десктопа
-  // padding-bottom: 94px;
-    
-    
-    &--start {
-      padding-top: 60px;
-      
-      // стилі десктопа
-      // padding-top: 94px;
-    }
-    
-    &--grey {
-      background-color: $team-buttons-bg-color;
-    }
-    
-    &--none {
-      @media screen and (max-width: 1199px) {
-        display: none;  
-      }
-      
-    }
-    
-    &__title {
-      margin-top: 0;
-      margin-bottom: 30px;  
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 28px;
-      color: $titles-color;
-      text-align: center;
-      line-height: 1.179;
-
-
-      // стилі десктопа
-      
-      // margin-bottom: 50px;  
-      
-      // font-size: 36px;
-      
-  
-      // line-height: 1.17;
-
-    }
-  
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
   }
+  
+  
+    
+    
+  &--start {
+    padding-top: 60px;
+      
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+    }
+  }
+    
+  &--grey {
+    background-color: $team-buttons-bg-color;
+  }
+    
+  &--none {
+    @media screen and (max-width: 1199px) {
+      display: none;  
+    }    
+  }
+    
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;  
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+    color: $titles-color;
+    text-align: center;
+    line-height: 1.179;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;   
+      font-size: 36px;
+      line-height: 1.17;
+    }
+
+  }
+  
+}
     

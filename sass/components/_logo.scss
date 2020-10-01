@@ -1,5 +1,5 @@
 .logo {
-    
+    display: block;
     font-family: $Raleway;
     font-weight: bold;
     font-size: 24px;
@@ -7,15 +7,10 @@
     letter-spacing: 0.03em;
     text-decoration: none;  
     
-    @media screen and (max-width: 767px)
-    {
-      display: inline-block;
-    }
 
 
     @media screen and (min-width: 1200px)
     {
-      width: 145px;
       font-size: 26px;
       line-height: 1.19;
     }
@@ -45,7 +40,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      margin-right: 94px;
+      margin-right: 93px;
       padding-top: 24px;
       padding-bottom: 25px; 
       }
@@ -56,11 +51,7 @@
   .footer__logo { 
     margin-right: 0;
     margin-bottom: 20px;
-
-    @media screen and (min-width: 1200px) {
-      display: block;
-    }
-  }
+}
     
 
   

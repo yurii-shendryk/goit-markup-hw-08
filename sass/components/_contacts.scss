@@ -1,9 +1,8 @@
 .nav-contacts {
-    margin-left: auto;
 
-    @media screen and (max-width: 767px){
-      display: none;
-    }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 
     @media screen and (min-width: 1200px){
       display: flex;
@@ -12,12 +11,17 @@
 
     &__item {       
       &:not(:last-child) {
-        @media screen and (max-width: 1199px) {
-          margin-bottom: 10px;
+        
+        @media screen and (max-width: 767px) {
+          margin-bottom: 16px;
         }
         
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          margin-bottom: 10px;
+        }
+
         @media screen and (min-width: 1200px) {
-            margin-right: 50px;
+            margin-right: 30px;
         }
         
       }
@@ -26,23 +30,26 @@
     }
     
 
-    &__link {
-      
-      align-items: center;
-      font-size: 12px;
-      font-weight: 500;
+    &__link {      
+      font-size: 18px;
+       font-weight: 500;
+      line-height: 1.167;
+      letter-spacing: 0.02em;       
       text-decoration: none;
+    
       fill: $description-header-link-color;
       color: $description-header-link-color;
-      letter-spacing: 0.02em;
-      line-height: 1.167;
+  
+  
       transition: color 250ms $timing, fill 250ms $timing;
 
-      @media screen and (min-width: 1200px) {
-        display: flex;
+      @media screen and (min-width: 768px){
+        align-items: center;
         font-size: 14px;
-        line-height: 1.1429;
+        font-weight: 500;
+        line-height: 1.143;
       }
+
 
       &:hover,
       &:focus {

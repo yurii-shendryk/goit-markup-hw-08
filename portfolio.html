@@ -10,41 +10,50 @@
     <!--Шапка  сайта-->
     <header class="header">
         <div class="container header__container">
-                        <a  href="index.html" class="logo header__logo logo--dark">
-                                <span class="logo__label">Web</span>Studio
-                        </a>
-                <nav class="nav">
-                        <ul class=" nav-menu list flexbox">
-                               <li class="nav-menu__item">
-                                        <a  href="index.html" class="nav-menu__link">Студия</a>
+                <a  href="index.html" class="logo header__logo logo--dark">
+                        <span class="logo__label">Web</span>Studio
+                </a>
+                
+                <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="navigation-wrap">
+                        <svg class="menu-button__icon" aria-label="переключатель мобильного меню">
+                                <use href="./img/symbol-defs.svg#menu_40px" class="menu-button__icon-menu"></use>
+                                <use href="./img/symbol-defs.svg#close_40px" class="menu-button__icon-cross"></use>
+                        </svg>
+                </button>
+                <div class="navigation-wrap" id="navigation-wrap" data-menu>
+                        <nav class="nav">
+                                <ul class=" nav-menu list flexbox">
+                                       <li class="nav-menu__item">
+                                                <a  href="index.html" class="nav-menu__link">Студия</a>
+                                        </li>
+                                        <li class="nav-menu__item">
+                                                <a  href="portfolio.html" class="nav-menu__link nav-menu__link--active">Портфолио</a>
+                                        </li>
+                                        <li class="nav-menu__item">
+                                                <a  href="" class="nav-menu__link">Контакты</a>
+                                        </li>
+                                </ul>
+                        
+                        </nav>
+                        <ul class="nav-contacts list">
+                                <li class="nav-contacts__item">
+                                        <a  href="mailto:info@devstudio.com" class="nav-contacts__link flexbox">
+                                                <svg class="nav-contacts__icon nav-contacts__envelope">
+                                                       <use href="./img/symbol-defs.svg#envelope"></use>
+                                                </svg>
+                                                info@devstudio.com
+                                        </a>
                                 </li>
-                                <li class="nav-menu__item">
-                                        <a  href="portfolio.html" class="nav-menu__link nav-menu__link--active">Портфолио</a>
-                                </li>
-                                <li class="nav-menu__item">
-                                        <a  href="" class="nav-menu__link">Контакты</a>
+                                <li class="nav-contacts__item">
+                                        <a  href="tel:+380961111111" class="nav-contacts__link flexbox">
+                                                <svg class="nav-contacts__icon nav-contacts__smartphone">
+                                                        <use href="./img/symbol-defs.svg#smartphone"></use>
+                                                </svg>
+                                                +38 096 111 11 11
+                                        </a>
                                 </li>
                         </ul>
-                </nav>
-
-                <ul class="nav-contacts list">
-                        <li class="nav-contacts__item">
-                                <a  href="mailto:info@devstudio.com" class="nav-contacts__link flexbox">
-                                        <svg class="nav-contacts__icon nav-contacts__envelope">
-                                                <use href="./img/symbol-defs.svg#envelope"></use>
-                                        </svg>
-                                        info@devstudio.com
-                                </a>
-                        </li>
-                        <li class="nav-contacts__item">
-                                <a  href="tel:+380961111111" class="nav-contacts__link flexbox">
-                                        <svg class="nav-contacts__icon nav-contacts__smartphone">
-                                                <use href="./img/symbol-defs.svg#smartphone"></use>
-                                        </svg>
-                                        +38 096 111 11 11
-                                </a>
-                        </li>
-                </ul>
+                </div>
         </div>
 </header>
         <main>
@@ -278,5 +287,6 @@
                         </div>
                 </div>         
        </footer>
+       <script src="js/menu.js"></script>
 </body>
 </html>

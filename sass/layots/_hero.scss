@@ -3,6 +3,7 @@
     min-height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;  
+
    background-color: $hero-bg-color; 
    background-image: linear-gradient(to right,$overlay,$overlay), url('../img/hero-img.jpg');
     background-size: cover;
@@ -43,7 +44,6 @@
       
       @media screen and (min-width: 1200px) {
       max-width: 696px;
-    
       font-size: 44px;
       line-height: 1.364;
       }

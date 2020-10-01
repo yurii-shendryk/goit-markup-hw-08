@@ -1,8 +1,24 @@
 .form {
-    width: 370px;    
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
+  width: 370px;    
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;  
+
+  @media screen and (max-width: 479px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    overflow: auto;
+  }
+    
+    
+  
+    
+    
+
 
     @media screen and (min-width: 1200px){
       width: 448px;      
@@ -19,6 +35,11 @@
         text-align: center;
         color: $description-header-link-color;
         
+        @media screen and (max-width: 479px){
+          font-size: 14px;
+          line-height: 2;
+        }
+
           @media screen and (min-width: 1200px){
             width: calc(100% - 11.5px*2);
             margin-left: auto;
@@ -36,8 +57,12 @@
       &__button {
         margin-left: auto;
         margin-right: auto;
-        padding: 10px 55px 10px 56px;
         background-color: $btn-send-color;
+        
+        @media screen and (min-width: 480px) {
+          padding: 10px 55px 10px 56px;  
+        }
+
       }
 
 }

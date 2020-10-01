@@ -1,13 +1,9 @@
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
 
-  &--end {
-    margin-bottom: 0;
-  }
- 
-  
+    position: relative;
+    margin-top: 28px;
 
   &__input {
     width: 100%;
@@ -21,6 +17,7 @@
     border: 1px solid $modal-input-border-color;
     border-radius: 4px;
     outline: none;
+
     
     @media screen and (min-width: 1200px) {
       padding-top: 14px;
@@ -39,6 +36,21 @@
     margin-bottom: 4px;
     color: $description-header-link-color;  
     letter-spacing: 0.01em;
+    
+      position: absolute;
+      top: -45%;
+      left: 0;
+
+      @media screen and (min-width: 1200px){
+        top: -37%;
+      }
+    
+    &--end {
+    
+        top: -12%;
+        
+  }
+
   }
 
   &__input-icon {
@@ -72,6 +84,12 @@
 
     &:focus {
       border-color: $accent-color;
+      @media screen and (max-width: 767px){
+        & ~ .form-field__label {
+          color: $accent-color;
+        }
+
+      }
     }
 
   }
@@ -87,7 +105,20 @@
       & ~ .form-field__input-icon {
         fill: $accent-color;
       }
+      @media screen and (max-width: 767px){
+        & ~ .form-field__label {
+          color: $accent-color;
+        }
+        &:focus:not(:placeholder-shown):valid ~ .form-field__label {
+          color: green;
+        }
 
+        &:not(:placeholder-shown):invalid ~ .form-field__label {
+          color: red;
+        }
+      }
+
+      
       &:not(:placeholder-shown):valid {
         border: 1px solid green;
       } 
