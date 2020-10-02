@@ -5,19 +5,30 @@
     padding-bottom: 118px;  
 
    background-color: $hero-bg-color; 
-   background-image: linear-gradient(to right,$overlay,$overlay), url('../img/hero-img.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-     background-position: center;
+   background-image: linear-gradient(to right,$overlay,$overlay), url('../img/mobile/hero-img.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right,$overlay,$overlay), url('../img/mobile/hero-img@2x.jpg');
+    }
 
      @media screen and (min-width:768px) {
       max-width: 1200px;
-      height: 400px;
+      min-height: 400px;
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right,$overlay,$overlay), url('../img/tablet/Header_img@2x.jpg');
     }
 
-    @media screen and (min-width:768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
       max-width: 1600px;
-      height: 600px;
+      min-height: 600px;
       padding-top: 200px;
       padding-bottom: 200px;  
     }
