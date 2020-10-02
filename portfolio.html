@@ -60,6 +60,7 @@
             <!--фильтры проектов-->
         <section class="section section--start">
             <div class="container">
+                <h2 class="section__title section__title--center visually-hidden">Нашы проекты</h2>
                 <ul class="filters list">
                     <li class="filters__item">
                         <button type="button" class="button filters__button">Все</button>
@@ -82,7 +83,35 @@
                         <a class="galery__link" href="">
                             <div class="project">
                                 <div class="project-thumb">
-                                    <img src="./img/web-site.jpg" alt="Веб-сайт Технокряк" class="img">
+                                     <picture>
+                                        <!-- для мобсльного -->
+                                        <source 
+                                        srcset="./img/mobile/web-site.webp 1x, ./img/mobile/web-site@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(max-width: 767px)">
+                                        <source 
+                                        srcset="./img/mobile/web-site.jpg 1x, ./img/mobile/web-site@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+                                        <!-- для десктопа -->
+                                        <source 
+                                        srcset="./img/desktop/web-site.webp 1x, ./img/desktop/web-site@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 1200px)">
+                                        <source 
+                                        srcset="./img/desktop/web-site.jpg 1x, ./img/desktop/web-site@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                        <!-- для таблета -->
+                                        <source 
+                                        srcset="./img/tablet/web-site.webp 1x, ./img/tablet/web-site@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 768px)">
+                                        <source 
+                                        srcset="./img/tablet/web-site.jpg 1x, ./img/tablet/web-site@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                        
+                                        <img src="./img/tablet/web-site.jpg" alt="Веб-сайт Технокряк" class="img">
+                                </picture>
+                                    
                                     <div class="project-overlay">
                                     <p class="project-overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                     </div>
@@ -98,7 +127,35 @@
                         <a class="galery__link" href="">
                             <div class="project">
                                 <div class="project-thumb">
-                                    <img src="./img/poster.jpg" alt="Постер New Orlean vs Golden State" class="img">
+                                     <picture>
+                                        <!-- для мобсльного -->
+                                        <source 
+                                        srcset="./img/mobile/poster.webp 1x, ./img/mobile/poster@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(max-width: 767px)">
+                                        <source 
+                                        srcset="./img/mobile/poster.jpg 1x, ./img/mobile/poster@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+                                        <!-- для десктопа -->
+                                        <source 
+                                        srcset="./img/desktop/poster.webp 1x, ./img/desktop/poster@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 1200px)">
+                                        <source 
+                                        srcset="./img/desktop/poster.jpg 1x, ./img/desktop/poster@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                        <!-- для таблета -->
+                                        <source 
+                                        srcset="./img/tablet/poster.webp 1x, ./img/tablet/poster@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 768px)">
+                                        <source 
+                                        srcset="./img/tablet/poster.jpg 1x, ./img/tablet/poster@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                        
+                                        <img src="./img/tablet/poster.jpg" alt="Постер New Orlean vs Golden State" class="img">
+                                </picture>
+                                    
                                     <div class="project-overlay">
                                     <p class="project-overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A labore laborum eveniet voluptate vitae quod rem totam necessitatibus optio natus suscipit, pariatur odit ab autem aut minus, tempora, possimus in vel! Amet sit minus tempora optio dignissimos alias magni vel?</p>
                                     </div>
@@ -114,7 +171,35 @@
                         <a class="galery__link" href="">
                             <div class="project">
                                 <div class="project-thumb">
-                                    <img src="./img/restaurant-logo.jpg" alt="логотип ресторана Seafood" class="img">
+                                     <picture>
+                                        <!-- для мобсльного -->
+                                        <source 
+                                        srcset="./img/mobile/restaurant-logo.webp 1x, ./img/mobile/restaurant-logo@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(max-width: 767px)">
+                                        <source 
+                                        srcset="./img/mobile/restaurant-logo.jpg 1x, ./img/mobile/restaurant-logo@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+                                        <!-- для десктопа -->
+                                        <source 
+                                        srcset="./img/desktop/restaurant-logo.webp 1x, ./img/desktop/restaurant-logo@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 1200px)">
+                                        <source 
+                                        srcset="./img/desktop/restaurant-logo.jpg 1x, ./img/desktop/restaurant-logo@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                        <!-- для таблета -->
+                                        <source 
+                                        srcset="./img/tablet/restaurant-logo.webp 1x, ./img/tablet/restaurant-logo@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 768px)">
+                                        <source 
+                                        srcset="./img/tablet/restaurant-logo.jpg 1x, ./img/tablet/restaurant-logo@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                        
+                                        <img src="./img/tablet/restaurant-logo.jpg" alt="логотип ресторана Seafood" class="img">
+                                </picture>
+                                    
                                     <div class="project-overlay">
                                     <p class="project-overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A labore laborumsdsdsdsdsdsdsdssdsdsds eveniet voluptate vitae quod rem totam necessitatibus optio natus suscipit, pariatur odit ab autem aut minus, tempora, possimus in vel! Amet sit minus tempora optio dignissimos alias magni vel?</p>
                                     </div>
@@ -130,7 +215,35 @@
                         <a  class="galery__link" href="">
                             <div class="project">
                                 <div class="project-thumb">
-                                <img src="./img/project-prime.jpg" alt="Наушники" class="img">
+                                     <picture>
+                                        <!-- для мобсльного -->
+                                        <source 
+                                        srcset="./img/mobile/project-prime.webp 1x, ./img/mobile/project-prime@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(max-width: 767px)">
+                                        <source 
+                                        srcset="./img/mobile/project-prime.jpg 1x, ./img/mobile/project-prime@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+                                        <!-- для десктопа -->
+                                        <source 
+                                        srcset="./img/desktop/project-prime.webp 1x, ./img/desktop/project-prime@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 1200px)">
+                                        <source 
+                                        srcset="./img/desktop/project-prime.jpg 1x, ./img/desktop/project-prime@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                        <!-- для таблета -->
+                                        <source 
+                                        srcset="./img/tablet/project-prime.webp 1x, ./img/tablet/project-prime@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 768px)">
+                                        <source 
+                                        srcset="./img/tablet/project-prime.jpg 1x, ./img/tablet/project-prime@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                        
+                                        <img src="./img/tablet/project-prime.jpg" alt="Наушники" class="img">
+                                </picture>
+                                
                                 <div class="project-overlay">
                                 <p class="project-overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A labore laborum eveniet voluptate vitae quod rem totam necessitatibus optio natus suscipit, pariatur odit ab autem aut minus, tempora, possimus in vel! Amet sit minus tempora optio dignissimos alias magni vel?</p>
                                 </div>
@@ -146,7 +259,35 @@
                         <a class="galery__link" href="">
                             <div class="project">
                                 <div class="project-thumb">
-                                    <img src="./img/project-boxes.jpg" alt="серая и коричневая коробки" class="img">
+                                     <picture>
+                                        <!-- для мобсльного -->
+                                        <source 
+                                        srcset="./img/mobile/project-boxes.webp 1x, ./img/mobile/project-boxes@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(max-width: 767px)">
+                                        <source 
+                                        srcset="./img/mobile/project-boxes.jpg 1x, ./img/mobile/project-boxes@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+                                        <!-- для десктопа -->
+                                        <source 
+                                        srcset="./img/desktop/project-boxes.webp 1x, ./img/desktop/project-boxes@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 1200px)">
+                                        <source 
+                                        srcset="./img/desktop/project-boxes.jpg 1x, ./img/desktop/project-boxes@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                        <!-- для таблета -->
+                                        <source 
+                                        srcset="./img/tablet/project-boxes.webp 1x, ./img/tablet/project-boxes@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 768px)">
+                                        <source 
+                                        srcset="./img/tablet/project-boxes.jpg 1x, ./img/tablet/project-boxes@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                        
+                                        <img src="./img/tablet/project-boxes.jpg" alt="серая и коричневая коробки" class="img">
+                                </picture>
+                                    
                                     <div class="project-overlay">
                                     <p class="project-overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A labore laborum eveniet voluptate vitae quod rem totam necessitatibus optio natus suscipit, pariatur odit ab autem aut minus, tempora, possimus in vel! Amet sit minus tempora optio dignissimos alias magni vel?</p>
                                     </div>
@@ -162,7 +303,35 @@
                         <a class="galery__link" href="">
                             <div class="project">
                                 <div class="project-thumb">
-                                    <img src="./img/Inspiration.jpg" alt="Веб-сайт Inspiration has no Borders" class="img">
+                                     <picture>
+                                        <!-- для мобсльного -->
+                                        <source 
+                                        srcset="./img/mobile/Inspiration.webp 1x, ./img/mobile/Inspiration@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(max-width: 767px)">
+                                        <source 
+                                        srcset="./img/mobile/Inspiration.jpg 1x, ./img/mobile/Inspiration@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+                                        <!-- для десктопа -->
+                                        <source 
+                                        srcset="./img/desktop/Inspiration.webp 1x, ./img/desktop/Inspiration@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 1200px)">
+                                        <source 
+                                        srcset="./img/desktop/Inspiration.jpg 1x, ./img/desktop/Inspiration@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                        <!-- для таблета -->
+                                        <source 
+                                        srcset="./img/tablet/Inspiration.webp 1x, ./img/tablet/Inspiration@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 768px)">
+                                        <source 
+                                        srcset="./img/tablet/Inspiration.jpg 1x, ./img/tablet/Inspiration@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                        
+                                        <img src="./img/tablet/Inspiration.jpg" alt="Веб-сайт Inspiration has no Borders" class="img">
+                                </picture>
+                                    
                                     <div class="project-overlay">
                                     <p class="project-overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A labore laborum eveniet voluptate vitae quod rem totam necessitatibus optio natus suscipit, pariatur odit ab autem aut minus, tempora, possimus in vel! Amet sit minus tempora optio dignissimos alias magni vel?</p>
                                     </div>
@@ -178,7 +347,35 @@
                         <a class="galery__link" href="">
                             <div class="project">
                                 <div class="project-thumb">
-                                    <img src="./img/edition.jpg" alt="пример дизайна открытой книги" class="img">
+                                     <picture>
+                                        <!-- для мобсльного -->
+                                        <source 
+                                        srcset="./img/mobile/edition.webp 1x, ./img/mobile/edition@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(max-width: 767px)">
+                                        <source 
+                                        srcset="./img/mobile/edition.jpg 1x, ./img/mobile/edition@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+                                        <!-- для десктопа -->
+                                        <source 
+                                        srcset="./img/desktop/edition.webp 1x, ./img/desktop/edition@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 1200px)">
+                                        <source 
+                                        srcset="./img/desktop/edition.jpg 1x, ./img/desktop/edition@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                        <!-- для таблета -->
+                                        <source 
+                                        srcset="./img/tablet/edition.webp 1x, ./img/tablet/edition@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 768px)">
+                                        <source 
+                                        srcset="./img/tablet/edition.jpg 1x, ./img/tablet/edition@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                        
+                                        <img src="./img/tablet/edition.jpg" alt="пример дизайна открытой книги" class="img">
+                                </picture>
+                                    
                                     <div class="project-overlay">
                                     <p class="project-overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A labore laborum eveniet voluptate vitae quod rem totam necessitatibus optio natus suscipit, pariatur odit ab autem aut minus, tempora, possimus in vel! Amet sit minus tempora optio dignissimos alias magni vel?</p>
                                     </div>
@@ -194,7 +391,35 @@
                         <a class="galery__link" href="">
                             <div class="project">
                                 <div class="project-thumb">
-                                <img src="./img/project-LAB-logo.jpg" alt="логотип проекта LAB" class="img">
+                                     <picture>
+                                        <!-- для мобсльного -->
+                                        <source 
+                                        srcset="./img/mobile/project-LAB-logo.webp 1x, ./img/mobile/project-LAB-logo@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(max-width: 767px)">
+                                        <source 
+                                        srcset="./img/mobile/project-LAB-logo.jpg 1x, ./img/mobile/project-LAB-logo@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+                                        <!-- для десктопа -->
+                                        <source 
+                                        srcset="./img/desktop/project-LAB-logo.webp 1x, ./img/desktop/project-LAB-logo@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 1200px)">
+                                        <source 
+                                        srcset="./img/desktop/project-LAB-logo.jpg 1x, ./img/desktop/project-LAB-logo@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                        <!-- для таблета -->
+                                        <source 
+                                        srcset="./img/tablet/project-LAB-logo.webp 1x, ./img/tablet/project-LAB-logo@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 768px)">
+                                        <source 
+                                        srcset="./img/tablet/project-LAB-logo.jpg 1x, ./img/tablet/project-LAB-logo@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                        
+                                        <img src="./img/tablet/project-LAB-logo.jpg" alt="логотип проекта LAB" class="img">
+                                </picture>
+                                
                                     <div class="project-overlay">
                                     <p class="project-overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A labore laborum eveniet voluptate vitae quod rem totam necessitatibus optio natus suscipit, pariatur odit ab autem aut minus, tempora, possimus in vel! Amet sit minus tempora optio dignissimos alias magni vel?</p>
                                     </div>
@@ -210,7 +435,35 @@
                         <a class="galery__link" href="">
                             <div class="project">
                                 <div class="project-thumb">
-                                <img src="./img/growing.jpg" alt="Стартовая страница приложения Growing Business" class="img">
+                                     <picture>
+                                        <!-- для мобсльного -->
+                                        <source 
+                                        srcset="./img/mobile/growing.webp 1x, ./img/mobile/growing@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(max-width: 767px)">
+                                        <source 
+                                        srcset="./img/mobile/growing.jpg 1x, ./img/mobile/growing@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+                                        <!-- для десктопа -->
+                                        <source 
+                                        srcset="./img/desktop/growing.webp 1x, ./img/desktop/growing@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 1200px)">
+                                        <source 
+                                        srcset="./img/desktop/growing.jpg 1x, ./img/desktop/growing@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                        <!-- для таблета -->
+                                        <source 
+                                        srcset="./img/tablet/growing.webp 1x, ./img/tablet/growing@2x.webp 2x" 
+                                        type="image/webp" 
+                                        media="(min-width: 768px)">
+                                        <source 
+                                        srcset="./img/tablet/growing.jpg 1x, ./img/tablet/growing@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                        
+                                        <img src="./img/tablet/growing.jpg" alt="Стартовая страница приложения Growing Business" class="img">
+                                </picture>
+                                
                                     <div class="project-overlay">
                                     <p class="project-overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A labore laborum eveniet voluptate vitae quod rem totam necessitatibus optio natus suscipit, pariatur odit ab autem aut minus, tempora, possimus in vel! Amet sit minus tempora optio dignissimos alias magni vel?</p>
                                     </div>
@@ -244,28 +497,28 @@
                            <b class="join__text">Присоединяйтесь</b>
                            <ul class="social list flexbox">
                                 <li class="social__item">
-                                        <a class="social__link social__link--dark flexbox" href="">
+                                        <a class="social__link social__link--dark flexbox" href="" aria-label="ссылка на Company instagram">
                                                 <svg class="social__icon social__icon--white">
                                                         <use href="./img/symbol-defs.svg#instagram"></use>
                                                 </svg>
                                         </a>
                                 </li>
                                 <li class="social__item">
-                                        <a class="social__link social__link--dark flexbox" href="">
+                                        <a class="social__link social__link--dark flexbox" href="" aria-label="ссылка на Company twitter">
                                                 <svg class="social__icon social__icon--white">
                                                         <use href="./img/symbol-defs.svg#twitter"></use>
                                                 </svg>
                                         </a>
                                 </li>
                                 <li class="social__item">
-                                        <a class="social__link social__link--dark flexbox" href="">
+                                        <a class="social__link social__link--dark flexbox" href="" aria-label="ссылка на Company facebook">
                                                 <svg class="social__icon social__icon--white">
                                                         <use href="./img/symbol-defs.svg#facebook"></use>
                                                 </svg>
                                         </a>
                                 </li>
                                 <li class="social__item">
-                                        <a class="social__link social__link--dark flexbox" href="">
+                                        <a class="social__link social__link--dark flexbox" href="" aria-label="ссылка на Company linkedin">
                                                 <svg class="social__icon social__icon--white">
                                                         <use href="./img/symbol-defs.svg#linkedin"></use>
                                                 </svg>
@@ -274,9 +527,12 @@
                            </ul>    
                         </div>
                         <div class="subscribe">
-                                <b class="subscribe__text">Подпишитесь на рассылку</b>               
+                                
                                         <form action="" class="subscribe-form flexbox" id="subscribe-form">
-                                                <input type="email" name="email" placeholder="E-mail" class="subscribe-form__input">
+                                            <label for="email">
+                                                <b class="subscribe__text">Подпишитесь на рассылку</b>               
+                                            </label>
+                                                <input type="email" name="email" id="email" placeholder="E-mail" class="subscribe-form__input">
                                                 <button type="submit" class="button subscribe-form__button">
                                                         Подписаться
                                                         <svg class="button__icon button__icon--end">
