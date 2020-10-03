@@ -18,16 +18,29 @@
 
     &__item{
     margin-right: 8px;
-        @media screen and (max-width: 767px){
-            margin-bottom: 15px;
-            &:nth-child(3n) {
-                margin-right: 0px;
-            }
 
-        &:nth-last-child(-n + 2){
-            margin-bottom: 0px;
+    @media screen and (max-width: 391px){
+        margin-bottom: 15px;
+        &:nth-child(2n) {
+            margin-right: 0px;
         }
+
+    &:nth-last-child(-n + 2){
+        margin-bottom: 0px;
+    }
+    }
+
+    @media screen and (min-width: 392px) and (max-width: 767px){
+        margin-bottom: 15px;
+        &:nth-child(3n) {
+            margin-right: 0px;
         }
+
+    &:nth-last-child(-n + 2){
+        margin-bottom: 0px;
+    }
+    }
+    
             
     }
 
