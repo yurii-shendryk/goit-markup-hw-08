@@ -1063,8 +1063,7 @@ summary {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  margin-top: 28px;
+  margin-bottom: 10px;
 }
 
 .form-field__input {
@@ -1093,22 +1092,14 @@ summary {
 .form-field__label {
   font-size: 12px;
   line-height: 1.167;
-  margin-bottom: 4px;
   color: #757575;
   letter-spacing: 0.01em;
-  position: absolute;
-  top: -45%;
-  left: 0;
 }
 
-@media screen and (min-width: 1200px) {
-  .form-field__label {
-    top: -37%;
+@media screen and (max-width: 767px) {
+  .form-field__label:focus-within {
+    color: #2196f3;
   }
-}
-
-.form-field__label--end {
-  top: -12%;
 }
 
 .form-field__input-icon {
@@ -1125,6 +1116,7 @@ summary {
 .form-field__textarea {
   resize: none;
   width: 100%;
+  margin-top: 4px;
   margin-bottom: 20px;
   padding: 12px 16px;
   font-size: 14px;
@@ -1210,6 +1202,7 @@ summary {
 
 .input-wrap {
   position: relative;
+  margin-top: 4px;
 }
 
 .header {
