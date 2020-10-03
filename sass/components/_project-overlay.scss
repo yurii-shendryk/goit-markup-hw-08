@@ -5,23 +5,13 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;    
 
-    padding-top: 77px;    
-    padding-right: 24px;    
-    padding-bottom: 77px;    
-    padding-left: 24px;    
     
     transform: translatey(100%);
     transition: transform 250ms $timing; 
-    @media screen and (min-width: 768px) {
-      padding-top: 49px;  
-      padding-bottom: 49px;  
-      }
- 
-      @media screen and (min-width: 1200px) {
-       padding-top: 63px;  
-      padding-bottom: 63px;  
-       }
+    
+
 
 
     .project:hover &,
@@ -31,10 +21,54 @@
     }
   
     &__text {  
+      width: 100%;
+      padding-top: 77px;    
+      padding-right: 24px;    
+      padding-bottom: 77px;    
+      padding-left: 24px;    
       margin: 0;
       font-size: 18px;
       line-height: 1.56;
       color: $main-color;
       letter-spacing: 0.03em;
+        
+        @media screen and (max-width: 347px) {
+          
+          padding-top: 15px;
+          padding-right: 15px;
+          padding-left: 15px;
+          font-size: 16px;
+          }
+
+          @media screen and (min-width: 348px) and (max-width: 389px) {
+            padding-top: 20px;
+            padding-right: 15px;
+            padding-left: 15px;
+            font-size: 17px;
+            }
+            
+            @media screen and (min-width: 390px) and (max-width: 409px) {
+              padding-top: 30px;
+              padding-right: 20px;
+              padding-left: 20px;
+              
+              }
+    
+          @media screen and (min-width: 410px) and (max-width: 450px) {
+                padding-top: 50px;
+                padding-right: 22px;
+              padding-left: 22px;
+          }
+
+        @media screen and (min-width: 768px) {
+          padding-top: 49px;  
+          padding-bottom: 49px;  
+          }
+     
+          @media screen and (min-width: 1200px) {
+           padding-top: 63px;  
+          padding-bottom: 63px;  
+           }  
+
       }
   }
