@@ -96,19 +96,7 @@
 
       & ~ .form-field__input-icon {
         fill: $accent-color;
-      }
-      @media screen and (max-width: 767px){
-        & ~ .form-field__label {
-          color: $accent-color;
-        }
-        &:focus:not(:placeholder-shown):valid ~ .form-field__label {
-          color: green;
-        }
-
-        &:not(:placeholder-shown):invalid ~ .form-field__label {
-          color: red;
-        }
-      }
+      }      
 
       
       &:not(:placeholder-shown):valid {

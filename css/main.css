@@ -1172,18 +1172,6 @@ summary {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
-  .form-field__input:focus ~ .form-field__label {
-    color: #2196f3;
-  }
-  .form-field__input:focus:focus:not(:placeholder-shown):valid ~ .form-field__label {
-    color: green;
-  }
-  .form-field__input:focus:not(:placeholder-shown):invalid ~ .form-field__label {
-    color: red;
-  }
-}
-
 .form-field__input:focus:not(:placeholder-shown):valid {
   border: 1px solid green;
 }
