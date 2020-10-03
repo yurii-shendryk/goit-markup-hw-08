@@ -769,11 +769,34 @@ summary {
   color: #ffffff;
 }
 
+.subscribe-form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-form {
-    display: block;
     width: 450px;
     margin: 0 166px 0 152px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -796,7 +819,6 @@ summary {
 
 @media screen and (min-width: 1200px) {
   .subscribe-form__input {
-    width: 358px;
     margin-right: 12px;
   }
 }
@@ -826,9 +848,9 @@ summary {
 }
 
 .subscribe-form__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -851,7 +873,6 @@ summary {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   width: 450px;
-  height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -872,19 +893,6 @@ summary {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .backdrop .modal {
-    padding: 40px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .backdrop .modal {
-    padding: 40px 39px 40px 41px;
   }
 }
 
@@ -964,7 +972,7 @@ summary {
 }
 
 .form {
-  width: 370px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -982,9 +990,15 @@ summary {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .form {
+    padding: 40px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .form {
-    width: 448px;
+    padding: 40px 39px 40px 41px;
   }
 }
 
@@ -992,17 +1006,10 @@ summary {
   display: block;
   margin-bottom: 30px;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
-}
-
-@media screen and (max-width: 479px) {
-  .form__checkbox-label {
-    font-size: 14px;
-    line-height: 2;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1011,6 +1018,7 @@ summary {
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -1066,9 +1074,18 @@ summary {
   margin-bottom: 10px;
 }
 
+.form-field--end {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .form-field:focus-within > .form-field__label {
+    color: #2196f3;
+  }
+}
+
 .form-field__input {
   width: 100%;
-  margin: 0;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 42px;
@@ -1078,28 +1095,12 @@ summary {
   outline: none;
 }
 
-@media screen and (min-width: 1200px) {
-  .form-field__input {
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 42px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    outline: none;
-  }
-}
-
 .form-field__label {
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.167;
   color: #757575;
   letter-spacing: 0.01em;
-}
-
-@media screen and (max-width: 767px) {
-  .form-field__label:focus-within {
-    color: #2196f3;
-  }
 }
 
 .form-field__input-icon {
@@ -1116,8 +1117,6 @@ summary {
 .form-field__textarea {
   resize: none;
   width: 100%;
-  margin-top: 4px;
-  margin-bottom: 20px;
   padding: 12px 16px;
   font-size: 14px;
   line-height: 1.143;
@@ -1158,12 +1157,6 @@ summary {
   border-color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
-  .form-field__textarea:focus ~ .form-field__label {
-    color: #2196f3;
-  }
-}
-
 .form-field__input:focus {
   border-color: #2196f3;
 }
@@ -1190,7 +1183,6 @@ summary {
 
 .input-wrap {
   position: relative;
-  margin-top: 4px;
 }
 
 .header {

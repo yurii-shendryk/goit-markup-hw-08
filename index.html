@@ -521,19 +521,18 @@
                                 </li>
                            </ul>    
                         </div>
-                        <div class="subscribe">
-                                <label for="email" class="subscribe__text">Подпишитесь на рассылку</label>        
-                                        <form class="subscribe-form flexbox" id="subscribe-form">
-                                                
-                                                <input type="email" name="email" id="email" placeholder="E-mail" class="subscribe-form__input">
-                                                <button type="submit" class="button subscribe-form__button">
-                                                        Подписаться
-                                                        <svg class="button__icon button__icon--end">
-                                                                <use href="./img/symbol-defs.svg#icon-send"></use>
-                                                        </svg>
-                                                </button>
-                                        </form>                                
-                        </div>
+                        <form class="subscribe-form flexbox" id="subscribe-form">
+                                <label for="email" class="subscribe__text">Подпишитесь на рассылку</label>
+                                <div class="subscribe-form__wrap">
+                                    <input type="email" name="email" id="email" placeholder="E-mail" class="subscribe-form__input">
+                                    <button type="submit" class="button subscribe-form__button">
+                                            Подписаться
+                                            <svg class="button__icon button__icon--end">
+                                                    <use href="./img/symbol-defs.svg#icon-send"></use>
+                                            </svg>
+                                    </button>
+                                </div>
+                            </form>                                
                 </div>         
        </footer>
 
@@ -547,39 +546,36 @@
                        <form class="form" id="contact-form">
                         <b class="modal__text">Оставте свои данные, мы вам перезвоним</b>
                         <div class="form-field flexbox">
-                                <label for="name" class="form-field__label">Имя
+                                <label for="name" class="form-field__label">Имя</label>
                                 <div class="input-wrap">
                                         <input type="text" name="name" id="name" class="form-field__input" placeholder=" " pattern="^[a-zA-ZА-Яа-яЁёї'іє\s]+$" autocomplete="off"  required>
                                         <svg class= "form-field__input-icon">
                                                 <use href="./img/symbol-defs.svg#icon-name"></use>
                                         </svg>
                                 </div>
-                        </label>
+                                        
                         </div>
                         <div class="form-field flexbox">
-                                <label for="telephone" class="form-field__label">Телефон
+                                <label for="telephone" class="form-field__label">Телефон</label>
                                 <div class="input-wrap">
                                         <input type="tel" name="telephone" id="telephone" class="form-field__input" placeholder=" " pattern="[0-9]{10,12}" autocomplete="off" required>
                                         <svg class= "form-field__input-icon">
                                                 <use href="./img/symbol-defs.svg#icon-tel"></use>
                                         </svg>
                                 </div>
-                        </label>
                         </div>
                         <div class="form-field flexbox">
-                                <label for="mail" class="form-field__label">Почта
+                                <label for="mail" class="form-field__label">Почта</label>
                                 <div class="input-wrap">
                                         <input type="email" name="mail" id="mail" class="form-field__input" placeholder=" " autocomplete="off" required>
                                         <svg class= "form-field__input-icon">
                                                 <use href="./img/symbol-defs.svg#icon-mail"></use>
                                         </svg>
                                 </div>
-                        </label>
                         </div>
-                        <div class="form-field flexbox">
-                                <label for="comment" class="form-field__label">Комментарий
+                        <div class="form-field form-field--end flexbox">
+                                <label for="comment" class="form-field__label">Комментарий</label>
                                 <textarea name="comment" id="comment" rows="6" placeholder="Введите коментарий" class="form-field__textarea"></textarea>
-                        </label>
                         </div>
                                 <label for="checkbox" class="form__checkbox-label">
                                 <input type="checkbox" class="form__checkbox visually-hidden" id="checkbox"/>

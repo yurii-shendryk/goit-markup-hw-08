@@ -769,11 +769,34 @@ summary {
   color: #ffffff;
 }
 
+.subscribe-form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-form {
-    display: block;
     width: 450px;
     margin: 0 166px 0 152px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -796,7 +819,6 @@ summary {
 
 @media screen and (min-width: 1200px) {
   .subscribe-form__input {
-    width: 358px;
     margin-right: 12px;
   }
 }
@@ -826,9 +848,9 @@ summary {
 }
 
 .subscribe-form__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

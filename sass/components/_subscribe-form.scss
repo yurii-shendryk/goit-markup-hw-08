@@ -1,11 +1,22 @@
 .subscribe-form {
-  
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: block;
+    flex-direction: column;
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
     margin: 0 166px 0 152px;
   }
   
+    @media screen and (min-width: 1200px) {
+      width: 570px;
+    }
+  &__wrap {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;    
+  }
+
+  }
+
   &__input {
     width: 100%;
     padding-left: 16px;
@@ -24,7 +35,7 @@
 
 
     @media screen and (min-width: 1200px) {
-      width: 358px;
+  
       margin-right: 12px;
     }
     
@@ -43,11 +54,10 @@
 
 
   &__button {
-     display: flex;
+     display: inline-flex;
      align-items: center;
      justify-content: center;
      padding: 10px 28px 10px 29px;
-    
      @media screen and (max-width: 1199px) {
       margin: 0 auto;
     }
