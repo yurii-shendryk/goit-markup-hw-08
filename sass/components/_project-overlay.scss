@@ -6,14 +6,28 @@
     left: 0;
     width: 100%;
 
-    padding: 77px 24px;    
-        
+    padding-top: 77px;    
+    padding-right: 24px;    
+    padding-bottom: 77px;    
+    padding-left: 24px;    
+    
     transform: translatey(100%);
     transition: transform 250ms $timing; 
-  
+    @media screen and (min-width: 768px) {
+      padding-top: 49px;  
+      padding-bottom: 49px;  
+      }
+ 
+      @media screen and (min-width: 1200px) {
+       padding-top: 63px;  
+      padding-bottom: 63px;  
+       }
+
+
     .project:hover &,
     .project:focus & {
      transform: translatey(0);
+     
     }
   
     &__text {  
