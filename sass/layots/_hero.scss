@@ -1,81 +1,79 @@
 .hero {
-    max-width: 768px;
-    min-height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;  
+  max-width: 768px;
+  min-height: 400px;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-   background-color: $hero-bg-color; 
-   background-image: linear-gradient(to right,$overlay,$overlay), url('../img/mobile/hero-img.jpg');
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-    
+  background-color: $hero-bg-color;
+  background-image: linear-gradient(to right, $overlay, $overlay),
+    url('../img/mobile/hero-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, $overlay, $overlay),
+      url('../img/mobile/hero-img@2x.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 1200px;
+    min-height: 400px;
+    background-image: linear-gradient(to right, $overlay, $overlay),
+      url('../img/tablet/Header_img.jpg');
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right,$overlay,$overlay), url('../img/mobile/hero-img@2x.jpg');
+      background-image: linear-gradient(to right, $overlay, $overlay),
+        url('../img/tablet/Header_img@2x.jpg');
     }
+  }
 
-    @media screen and (min-width:768px) {
-      max-width: 1200px;
-      min-height: 400px;
-      background-image: linear-gradient(to right,$overlay,$overlay), url('../img/tablet/Header_img.jpg');
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right,$overlay,$overlay), url('../img/tablet/Header_img@2x.jpg');
-      }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, $overlay, $overlay),
+      url('../img/desktop/bcg.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $overlay, $overlay),
+        url('../img/desktop/bcg@2x.jpg');
     }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+
+    max-width: 360px;
+
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.615;
+    color: $main-color;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
 
     @media screen and (min-width: 1200px) {
-      max-width: 1600px;
-      min-height: 600px;
-      padding-top: 200px;
-      padding-bottom: 200px;  
-      background-image: linear-gradient(to right,$overlay,$overlay), url('../img/desktop/bcg.jpg');
-      
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right,$overlay,$overlay), url('../img/desktop/bcg@2x.jpg');
-      }
-    }
-
-  
-  
-
-    &__title {
-      
-       margin-top: 0;
-       margin-right: auto;
-       margin-bottom: 30px;
-       margin-left: auto;
-       
-       max-width: 360px;
-    
-      font-size: 26px;
-      font-weight: 900;
-      line-height: 1.615;
-      color: $main-color;
-      letter-spacing: 0.06em;
-      text-align: center;
-      text-transform: uppercase;
-      
-      @media screen and (min-width: 1200px) {
       max-width: 696px;
       font-size: 44px;
       line-height: 1.364;
-      }
-
-      
     }
-
-    &__button {
-      margin-left: auto;
-      margin-right: auto;
-      padding: 10px 32px;
-    }
-
   }
-  
- 
+
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+  }
+}
